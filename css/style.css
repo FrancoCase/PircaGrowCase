@@ -1,0 +1,921 @@
+body {
+  height: 100vh;
+  background-color: #ddaea8;
+  font-family: 'Spartan', sans-serif;
+}
+
+section {
+  height: 60%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+section .sectInicio_titulo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  font-weight: 500;
+  font-size: 50px;
+  color: #105a49;
+}
+
+section .sectInicio_parrafoTitulo {
+  padding: 20px;
+  background-color: white;
+  color: #b9a23e;
+  font-weight: 400;
+  font-size: 20px;
+  text-align: justify;
+  border-radius: 5px;
+}
+
+section .sectInicio_boton {
+  background-color: #105a49;
+  border-radius: 15px;
+  padding: 5px;
+}
+
+section .sectInicio_boton .sectInicio_botonLink {
+  text-decoration: none;
+  color: white;
+  font-weight: 400;
+}
+
+section .sectInicio_boton:hover {
+  background-color: white;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+section .sectInicio_boton:hover .sectInicio_botonLink:hover {
+  color: #105a49;
+}
+
+section #carouselExampleSlidesOnly {
+  display: none;
+}
+
+section .controlMedias_inicio {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+footer {
+  background-color: #105a49;
+  position: relative;
+  bottom: 0;
+  height: 20%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: solid #b9a23e;
+  border-radius: 15px;
+  padding: 5px;
+}
+
+footer .susNews {
+  height: 100%;
+  width: 50%;
+}
+
+footer .susNews legend {
+  font-size: 15px;
+  font-weight: 500;
+  color: #b9a23e;
+}
+
+footer .susNews .botonSuscribe {
+  background-color: #ddaea8;
+  color: #105a49;
+}
+
+footer .susNews #emailsus {
+  width: 100%;
+}
+
+footer .copyr {
+  height: 100%;
+  width: 50%;
+  padding: 2px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  font-size: 15px;
+}
+
+.botonHome {
+  height: 50%;
+  width: 30%;
+  background: none;
+}
+
+.botonHome .botonHome_img {
+  height: 100%;
+  width: 100%;
+}
+
+.navbar {
+  height: 100%;
+  width: 100%;
+  border: solid white;
+  border-radius: 15px;
+}
+
+.navbar .container-fluid {
+  height: 100%;
+  width: 100%;
+  background-color: #105a49;
+  border-radius: 15px;
+  padding: 5px;
+}
+
+.navbar-light .navbar-nav .show > .nav-link,
+.navbar-light .navbar-nav .nav-link.active {
+  color: white;
+}
+
+#navbarDropdownMenuLink {
+  color: white;
+}
+
+.dropdown-menu {
+  background-color: #ddaea8;
+  border-radius: 10px;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.dropdown-menu .dropdown-item {
+  color: #105a49;
+}
+
+.dropdown-menu .dropdown-item:hover {
+  color: white;
+  background-color: #105a49;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.btn-flotante {
+  display: none;
+}
+
+.sectRegisyContacto {
+  height: 100%;
+  width: 100%;
+  background-color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  overflow: scroll;
+}
+
+.sectRegisyContacto .formRegistro {
+  height: 100%;
+  width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 10px;
+  background: #105a49;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(16, 90, 73, 0.88)), color-stop(98%, #ddaea8));
+  background: linear-gradient(180deg, rgba(16, 90, 73, 0.88) 0%, #ddaea8 98%);
+  border-radius: 15px;
+  border: solid #b9a23e;
+}
+
+.sectRegisyContacto .formRegistro .ryc {
+  height: 100%;
+  width: 100%;
+}
+
+.sectRegisyContacto .formRegistro .ryc .registroCliente {
+  height: 100%;
+  width: 100%;
+}
+
+.sectRegisyContacto .formRegistro .ryc .registroCliente .textoForm {
+  font-weight: 400;
+  font-size: 10px;
+  color: black;
+}
+
+.sectRegisyContacto .formContacto {
+  height: 100%;
+  width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 5px;
+  border-radius: 15px;
+  border: solid #b9a23e;
+  background: #fffdfd;
+  background: -webkit-gradient(linear, left top, left bottom, from(#fffdfd), color-stop(85%, #115a49));
+  background: linear-gradient(180deg, #fffdfd 0%, #115a49 85%);
+}
+
+.sectRegisyContacto .formContacto .ryc {
+  height: 100%;
+  width: 100%;
+}
+
+.sectRegisyContacto .formContacto .ryc .contactoCliente {
+  height: 100%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.sectRegisyContacto .formContacto .ryc .contactoCliente .textoForm {
+  font-weight: 400;
+  font-size: 10px;
+  color: black;
+}
+
+.sectDevyVar {
+  height: 100%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  overflow: scroll;
+}
+
+.sectDevyVar .prodGeneral {
+  height: 100%;
+  width: 80%;
+}
+
+.sectDevyVar .prodGeneral .prodGeneral_devyvar {
+  height: 90%;
+  width: 100%;
+  overflow: scroll;
+}
+
+.sectDevyVar .prodGeneral .card {
+  height: 15%;
+  width: 100%;
+}
+
+.tituloProducto {
+  color: #105a49;
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.card-body {
+  background-color: #105a49;
+}
+
+.card-body .card-title {
+  color: #b9a23e;
+  font-weight: 500;
+  font-size: 30px;
+}
+
+.card-body .card-text {
+  color: white;
+}
+
+.btn.btn-primary {
+  background-color: #ddaea8;
+  color: #105a49;
+  border: white;
+  font-size: 2rem;
+}
+
+.btn.btn-primary:hover {
+  background-color: #b9a23e;
+  color: #105a49;
+}
+
+.sectIndoor {
+  height: 100%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  overflow: scroll;
+}
+
+.sectIndoor .container {
+  height: 90%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.sectIndoor .container .col {
+  height: 100%;
+  width: 100%;
+}
+
+.sectIndoor .container .col .card {
+  height: 100%;
+  width: 100%;
+}
+
+@media only screen and (min-width: 768px) {
+  .sectInicio {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .sectInicio .controlMedias_inicio {
+    height: 100%;
+    width: 40%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .sectInicio .controlMedias_inicio .sectInicio_titulo {
+    width: 100%;
+  }
+  .sectInicio .controlMedias_inicio .sectInicio_parrafoTitulo {
+    width: 100%;
+    text-align: center;
+  }
+  .sectInicio .controlMedias_inicio .sectInicio_boton {
+    background-color: #105a49;
+    border-radius: 15px;
+    padding: 5px;
+  }
+  .sectInicio .controlMedias_inicio .sectInicio_boton .sectInicio_botonLink {
+    text-decoration: none;
+    color: white;
+    font-weight: 400;
+  }
+  .sectInicio .controlMedias_inicio .sectInicio_boton:hover {
+    background-color: white;
+    -webkit-transition: 1s;
+    transition: 1s;
+  }
+  .sectInicio .controlMedias_inicio .sectInicio_boton:hover .sectInicio_botonLink:hover {
+    color: #105a49;
+  }
+  .sectInicio .carrusel {
+    height: 50%;
+    width: 50%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .sectInicio .carrusel #carouselExampleSlidesOnly {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .sectInicio .carrusel .carousel-inner {
+    height: 85%;
+    width: 85%;
+    border-radius: 15px;
+  }
+  footer {
+    position: fixed;
+  }
+  footer .susNews {
+    height: 100%;
+    width: 30%;
+  }
+  footer .susNews legend {
+    font-size: 15px;
+    font-weight: 500;
+    color: #b9a23e;
+  }
+  footer .susNews .botonSuscribe {
+    background-color: #ddaea8;
+    color: #105a49;
+  }
+  footer .susNews #emailsus {
+    width: 100%;
+  }
+  footer .copyr {
+    width: 30%;
+  }
+  .btn-flotante {
+    display: block;
+    height: 10%;
+    width: 10%;
+    position: fixed;
+    -webkit-transition: all 300ms ease 0ms;
+    transition: all 300ms ease 0ms;
+    -webkit-box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+            box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    z-index: 99;
+    border-radius: 50%;
+  }
+  .btn-flotante:hover {
+    background-color: #b9a23e;
+    -webkit-box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.3);
+            box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.3);
+    -webkit-transform: translateY(-7px);
+            transform: translateY(-7px);
+    border-radius: 50%;
+  }
+  .btn-flotante_img {
+    height: 90%;
+    width: 90%;
+    margin: 5%;
+  }
+  .sectRegisyContacto {
+    height: 70%;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    overflow: unset;
+  }
+  .sectRegisyContacto .formContacto {
+    height: 70%;
+    width: 40%;
+  }
+  .sectRegisyContacto .formContacto .ryc {
+    height: 100%;
+    width: 100%;
+  }
+  .sectRegisyContacto .formContacto .ryc .contactoCliente {
+    height: 100%;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .sectRegisyContacto .formContacto .ryc .contactoCliente .textoForm {
+    font-size: 20px;
+  }
+  .sectRegisyContacto .formRegistro {
+    height: 70%;
+    width: 40%;
+  }
+  .sectRegisyContacto .formRegistro .ryc {
+    height: 100%;
+    width: 100%;
+  }
+  .sectRegisyContacto .formRegistro .ryc .registroCliente {
+    height: 100%;
+    width: 100%;
+  }
+  .sectRegisyContacto .formRegistro .ryc .registroCliente .textoForm {
+    font-size: 20px;
+  }
+  .sectDevyVar {
+    height: 70%;
+    width: 100%;
+    padding: 5px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    overflow: scroll;
+  }
+  .sectDevyVar .prodGeneral {
+    height: 100%;
+    width: 33%;
+  }
+  .sectDevyVar .prodGeneral .prodGeneral_devyvar {
+    height: 90%;
+    width: 100%;
+    overflow: scroll;
+  }
+  .sectDevyVar .prodGeneral .card {
+    height: 15%;
+    width: 100%;
+  }
+  .sectIndoor {
+    height: 70%;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    overflow: unset;
+  }
+  .sectIndoor .container {
+    height: 70%;
+    width: 100%;
+    background-color: white;
+    border: solid #105a49;
+    border-radius: 15px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    overflow: scroll;
+  }
+  .sectIndoor .container .col {
+    height: 100%;
+    width: 20%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .sectIndoor .container .col .card {
+    height: 100%;
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .sectInicio {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .sectInicio .controlMedias_inicio {
+    height: 100%;
+    width: 40%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .sectInicio .controlMedias_inicio .sectInicio_titulo {
+    width: 100%;
+  }
+  .sectInicio .controlMedias_inicio .sectInicio_parrafoTitulo {
+    width: 100%;
+  }
+  .sectInicio .controlMedias_inicio .sectInicio_boton {
+    background-color: #105a49;
+    border-radius: 15px;
+    padding: 5px;
+  }
+  .sectInicio .controlMedias_inicio .sectInicio_boton .sectInicio_botonLink {
+    text-decoration: none;
+    color: white;
+    font-weight: 400;
+  }
+  .sectInicio .controlMedias_inicio .sectInicio_boton:hover {
+    background-color: white;
+    -webkit-transition: 1s;
+    transition: 1s;
+  }
+  .sectInicio .controlMedias_inicio .sectInicio_boton:hover .sectInicio_botonLink:hover {
+    color: #105a49;
+  }
+  .sectInicio .carrusel {
+    height: 70%;
+    width: 40%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .sectInicio .carrusel #carouselExampleSlidesOnly {
+    height: 100%;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .sectInicio .carrusel .carousel-inner {
+    height: 100%;
+    width: 80%;
+    border-radius: 15px;
+  }
+  footer {
+    position: relative;
+  }
+  footer .susNews {
+    height: 100%;
+    width: 30%;
+  }
+  footer .susNews legend {
+    font-size: 15px;
+    font-weight: 500;
+    color: #b9a23e;
+  }
+  footer .susNews .botonSuscribe {
+    background-color: #ddaea8;
+    color: #105a49;
+  }
+  footer .susNews #emailsus {
+    width: 100%;
+  }
+  footer .copyr {
+    width: 30%;
+  }
+  .btn-flotante {
+    display: block;
+    height: 10%;
+    width: 10%;
+    position: fixed;
+    -webkit-transition: all 300ms ease 0ms;
+    transition: all 300ms ease 0ms;
+    -webkit-box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+            box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    z-index: 99;
+    border-radius: 50%;
+  }
+  .btn-flotante:hover {
+    background-color: #b9a23e;
+    -webkit-box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.3);
+            box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.3);
+    -webkit-transform: translateY(-7px);
+            transform: translateY(-7px);
+    border-radius: 50%;
+  }
+  .btn-flotante_img {
+    height: 90%;
+    width: 90%;
+    margin: 5%;
+  }
+  .sectRegisyContacto {
+    height: 60%;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    overflow: unset;
+  }
+  .sectRegisyContacto .formContacto {
+    height: 100%;
+    width: 30%;
+  }
+  .sectRegisyContacto .formContacto .ryc {
+    height: 100%;
+    width: 100%;
+  }
+  .sectRegisyContacto .formContacto .ryc .contactoCliente {
+    height: 100%;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .sectRegisyContacto .formContacto .ryc .contactoCliente .textoForm {
+    font-size: 20px;
+  }
+  .sectRegisyContacto .formRegistro {
+    height: 100%;
+    width: 30%;
+  }
+  .sectRegisyContacto .formRegistro .ryc {
+    height: 100%;
+    width: 100%;
+  }
+  .sectRegisyContacto .formRegistro .ryc .registroCliente {
+    height: 100%;
+    width: 100%;
+  }
+  .sectRegisyContacto .formRegistro .ryc .registroCliente .textoForm {
+    font-size: 20px;
+  }
+  .sectDevyVar {
+    height: 70%;
+    width: 100%;
+    padding: 5px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    overflow: unset;
+  }
+  .sectDevyVar .prodGeneral {
+    height: 100%;
+    width: 30%;
+    padding: 5px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    border: solid #b9a23e;
+    border-radius: 15px;
+  }
+  .sectDevyVar .prodGeneral .tituloProducto {
+    width: 100%;
+    text-align: center;
+  }
+  .sectDevyVar .prodGeneral .prodGeneral_devyvar {
+    height: 90%;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    overflow: scroll;
+  }
+  .sectDevyVar .prodGeneral .card {
+    height: 15%;
+    width: 100%;
+  }
+  .sectIndoor {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .sectIndoor .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+  }
+  .sectIndoor {
+    height: 70%;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    overflow: unset;
+  }
+  .sectIndoor .container {
+    height: 100%;
+    width: 100%;
+    background-color: white;
+    border: solid #105a49;
+    border-radius: 15px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    overflow: scroll;
+  }
+  .sectIndoor .container .col {
+    height: 100%;
+    width: 20%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .sectIndoor .container .col .card {
+    height: 100%;
+    width: 100%;
+  }
+}
+/*# sourceMappingURL=style.css.map */
