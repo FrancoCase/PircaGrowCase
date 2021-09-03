@@ -4,6 +4,7 @@ $colorDorado: rgb(185, 162, 62);
 $colorBlanco: white;
 body{
     height: 100vh;
+    width: 100%;
     background-color: $colorRosa;
     font-family: 'Spartan', sans-serif;
 }
@@ -13,8 +14,9 @@ section{
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-around;
-    .sectInicio_titulo{
+
+}
+.sectInicio_titulo{
         display: flex;
         align-items: center;
         justify-content: center;
@@ -23,7 +25,7 @@ section{
         font-size: 50px;
         color:$colorVerde
     }
-    .sectInicio_parrafoTitulo{
+.sectInicio_parrafoTitulo{
         padding: 20px;
         background-color: $colorBlanco;
         color: $colorDorado;
@@ -32,36 +34,37 @@ section{
         text-align: justify;
         border-radius: 5px;
     }
-    .sectInicio_boton{
+.sectInicio_boton{
         background-color: $colorVerde;
         border-radius: 15px;
         padding: 5px;
-        .sectInicio_botonLink{
+.sectInicio_botonLink{
             text-decoration: none;
             color: $colorBlanco;
             font-weight: 400;
 
         }
     }
-    .sectInicio_boton:hover{
+.sectInicio_boton:hover{
         background-color: $colorBlanco;
         transition: 1s;
-        .sectInicio_botonLink:hover{
+.sectInicio_botonLink:hover{
             color: $colorVerde;
         }
     }
-    #carouselExampleSlidesOnly{
+#carouselExampleSlidesOnly{
     display: none;
     }
-    .controlMedias_inicio{
+.controlMedias_inicio{
         height: 100%;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: space-around;
     }
-}
+
 footer{
+
     .susNews{
         height: 100%;
         width: 50%;
@@ -88,7 +91,7 @@ footer{
         font-size: 15px;
     }
     background-color: $colorVerde;
-    position: relative;
+    position: fixed;
     bottom: 0;
     height: 20%;
     width: 100%;
@@ -213,20 +216,30 @@ footer{
     }
 }
 .sectDevyVar{
-    height: 100%;
+    height: 70%;
     width: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    overflow: scroll;
+    justify-content: center;
     .prodGeneral{
-        height: 100%;
-        width: 80%;
-        
-        .prodGeneral_devyvar{
-            height: 90%;
-            width: 100%;
-            overflow: scroll;
+        height: 80%;
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        overflow: scroll;
+        .botonesDVP{
+            display: flex;
+            flex-direction: column;
+            align-content: center;
+            .btn.btn-primary{
+                border-radius: 15px;
+                border: solid $colorDorado;
+                color: $colorVerde;
+            }
+            .btn.btn-primary:hover{
+                background-color: $colorBlanco;
+                transition: 1s;
+            }
         }
         .card{
             height:15%;
@@ -234,13 +247,24 @@ footer{
         }
     }
 }
-.tituloProducto{ 
+.tituloProducto{
     color: $colorVerde;
     font-size: 30px;
-    font-weight: 600;
+    font-weight: 500;
 }
+.tituloPyV{
+    font-weight: 600;
+    font-size: 25px;
+    color:$colorVerde ;
+    background-color: $colorBlanco;
+    border: solid $colorDorado;
+    text-align: center;
+}
+
 .card-body{
-    background-color: $colorVerde;
+    height: 100%;
+    width: 100%;
+
 
     .card-title{
     color: $colorDorado;
@@ -248,7 +272,7 @@ footer{
     font-size: 30px;
     }
     .card-text{
-        color: $colorBlanco;
+        color: $colorVerde;
     }
 }
 .btn.btn-primary{
@@ -262,25 +286,53 @@ footer{
     color: $colorVerde;
 }
 .sectIndoor{
-    height: 100%;
+    height: 70%;
     width: 100%;
     display: flex;
     flex-direction: column;
+    justify-content: flex-start;
+    align-content: center;
+    .textoIndoor{
+        display: none;
+    }
+    .botonIndoor{
+        background-color: $colorBlanco;
+        color: $colorVerde;
+        border-radius: 15px;
+    }
+    .botonIndoor:hover{
+        background-color: $colorVerde;
+        color: $colorBlanco;
+        transition: 1s;
+    }
+}
+.carousel-caption{
+    h5{
+        color: $colorBlanco;
+    }
+    p{
+        color: $colorBlanco;
+    }
+    background-color: rgba(0, 0, 0, 0.603);
+
+}
+
+.sectSusyFer{
+    height: 60%;
+    width: 100%;
+    justify-content: center;
     overflow: scroll;
-    
-    .container{
-        height: 90%;
-        width: 100%;
+    .textoSus{
+        display: none;
+    }
+    .prodSusyFer{
+        height: 100%;
+        width: 80%;
         display: flex;
-        justify-content: center;
-        .col{
-            height: 100%;
-            width: 100%;
-            .card{
-                height: 100%;
-                width: 100%;
-            }
-        }
+        flex-direction: column;
+    }
+    .susyfertWeb{
+        display: none;
     }
 }
 @media only screen and (min-width: 768px) {
@@ -392,6 +444,7 @@ footer{
         width: 100%;
         display: flex;
         flex-direction: row;
+        justify-content:  space-around;
         align-items: center;
         overflow: unset;
         .formContacto{
@@ -411,14 +464,17 @@ footer{
                 }
             }
         }
-        .formRegistro{
+        
+        
+         .formRegistro{
             height:70%;
-            width: 40%;
+             width: 40%;
             
+                
             .ryc{
                 height: 100%;
                 width: 100%;
-            
+                
                 .registroCliente{
                     height: 100%;
                     width: 100%;
@@ -426,6 +482,7 @@ footer{
                         font-size: 20px;
                     }
                 }
+                
             }
         }
     }
@@ -433,21 +490,17 @@ footer{
     .sectDevyVar{
         height: 70%;
         width: 100%;
-        padding: 5px;
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-around;
-        overflow: scroll;
+        
         .prodGeneral{
             height: 100%;
-            width: 33%;
-            
-            .prodGeneral_devyvar{
-                height: 90%;
-                width: 100%;
-                overflow: scroll;
+            width: 100%;
+            align-items: center;
+            .botonesDVP{
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
             }
+
             .card{
                 height:15%;
                 width: 100%;
@@ -461,27 +514,17 @@ footer{
         flex-direction: column;
         overflow: unset;
         
-        .container{
-            height: 70%;
-            width: 100%;
-            background-color: $colorBlanco;
-            border:solid $colorVerde;
-            border-radius: 15px;
+    
+    }
+    .sectSusyFer{
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        .prodSusyFer{
             display: flex;
-            flex-direction: row ;
-            overflow: scroll;
-            .col{
-                height: 100%;
-                width: 20%;
-                display: flex;
-                justify-content: space-around;
+            flex-direction: column;
+            align-items: center;
 
-
-                .card{
-                    height: 100%;
-                    width: 100%;
-                }
-            }
         }
     }
 }
@@ -548,7 +591,7 @@ footer{
         }
     }
     footer{
-        position: relative;
+        position: fixed;
         .susNews{
             height: 100%;
             width: 30%;
@@ -593,7 +636,7 @@ footer{
         margin: 5%;
     }
     .sectRegisyContacto{
-        height: 60%;
+        height: 100%;
         width: 100%;
         display: flex;
         flex-direction: row;
@@ -620,13 +663,17 @@ footer{
             height: 100%;
             width: 30%;
             
+            
             .ryc{
                 height: 100%;
                 width: 100%;
             
                 .registroCliente{
-                    height: 100%;
+                    height: 80%;
                     width: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    align-content: center;
                     .textoForm{
                         font-size: 20px;
                     }
@@ -636,77 +683,111 @@ footer{
     }
 
     .sectDevyVar{
-        height: 70%;
+        height: 60%;
         width: 100%;
-        padding: 5px;
+        
         display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
+        flex-direction: column;
         justify-content: space-around;
-        overflow:unset;
+       
         .prodGeneral{
             height: 100%;
-            width: 30%;
-            padding: 5px;
-            display: flex;
-            flex-flow: row wrap;
-            border: solid $colorDorado;
-            border-radius: 15px;
+            width: 100%;
+            
+            .botonesDVP{
+                width: 100%;
+                display: flex;
+                justify-content: space-around;
+                .btn.btn-primary{
+                    background-color: $colorRosa;
+                    color: $colorVerde;
+
+                }
+            }
+        
             .tituloProducto{
                 width: 100%;
                 text-align: center;
             }
-            
-            .prodGeneral_devyvar{
-                height:90%;
+            .card{
+                height: 15%;
                 width: 100%;
-                display: flex;
-                justify-content: center;
-                overflow:scroll ;
+            }
+            
+        }
+    }
+    .sectIndoor{
+       height: 60%;
+       width: 100%;
+       display: flex;
+       flex-direction:row;
+       justify-content: space-around;
+       h2{
+           display: none;
+       }
+        .textoIndoor{
+            border: solid $colorDorado;
+            padding: 5px;
+            width: 20%;
+            display: block;
+            h3{
+                color: $colorVerde;
+                font-weight: 600;
                 
             }
-            .card{
-                height:15%;
-                width: 100%;
+            p{
+                background-color: $colorVerde;
+                border-radius: 10px;
+                color: $colorBlanco;
+                padding:10px;
+
             }
         }
-    }
-    .sectIndoor{
-       display: flex;
-       flex-direction: column; 
-       .container{
-            display: flex;
-            flex-flow: row wrap;
+        .carousel{
+            height: 100%;
+            width: 30%;
+        }
+        .botonIndoor{
+            height: 20%;
+            width: 20%;
+            border: solid $colorDorado;
         }
     }
-    .sectIndoor{
+    
+    .sectSusyFer{
         height: 70%;
         width: 100%;
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
         overflow: unset;
-        
-        .container{
-            height: 100%;
-            width: 100%;
-            background-color: $colorBlanco;
-            border:solid $colorVerde;
-            border-radius: 15px;
-            display: flex;
-            flex-direction: row ;
-            overflow: scroll;
-            .col{
-                height: 100%;
-                width: 20%;
-                display: flex;
-                justify-content: space-around;
-
-
-                .card{
-                    height: 100%;
-                    width: 100%;
-                }
+        .textoSus{
+            height: 80%;
+            width: 40%;
+            padding: 10px;
+            display: block;
+            border: solid $colorDorado;
+            border-radius: 10px;
+            margin-bottom: 5%;
+            p{
+                color: $colorVerde;
+                font-weight: 600;
+                font-size: 26px;
             }
         }
+        .prodSusyFer{
+            display: none;
+        
+        }
+        .susyfertWeb{
+            display: block;
+            margin-bottom: 5%;
+            height: 80%;
+            width: 40%;
+            overflow: scroll;
+            overflow-x: hidden;
+        }
+
     }
 }
